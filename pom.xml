@@ -10,13 +10,13 @@
 	</parent>
 	<groupId>com.kysh.commons</groupId>
 	<artifactId>spring-commons-lib</artifactId>
-	<version>${revision}</version>
+	<version>0.0.1-${revision}</version>
 	<name>spring-commons-lib</name>
 	<description>Common libraries for SpringBoot applications</description>
 	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.8</java.version>
-		<revision>1.0.0</revision>
+		<revision>SNAPSHOT</revision>
 	</properties>
 	<dependencies>
 		<dependency>
