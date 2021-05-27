@@ -30,7 +30,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Get Time
-          id: time
+        id: time
           uses: nanzm/get-time-action@v1.1
           with:
             timeZone: 8
