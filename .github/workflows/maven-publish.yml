@@ -37,6 +37,7 @@ jobs:
           format: 'YYYYMMDDHHmmss'
 
       - name: Publish to GitHub Packages Apache Maven
-        run: mvn -B -s $GITHUB_WORKSPACE/deploy_settings.xml clean deploy --batch-mode --no-transfer-progress -Drevision=${{ steps.time.outputs.time }}
+#        run: mvn -B -s $GITHUB_WORKSPACE/deploy_settings.xml clean deploy --batch-mode --no-transfer-progress -Drevision=${{ steps.time.outputs.time }}
+        run: mvn -B -s $GITHUB_WORKSPACE/deploy_settings.xml clean deploy --batch-mode --no-transfer-progress
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
